@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  width: 600px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tag,
+.location {
+  font-size: 22px;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+}

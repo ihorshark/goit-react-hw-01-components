@@ -1,0 +1,30 @@
+.statistics {
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: wheat;
+  text-align: center;
+}
+
+.starList {
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.title {
+  font-size: 28px;
+  padding-bottom: 12px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  /* background-color: blue; */
+}

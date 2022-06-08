@@ -4,7 +4,7 @@ export default function FriendList({ friends }) {
   return (
     <ul>
       {friends.map(friend => (
-        <li>
+        <li key={friend.id}>
           <Friend
             avatar={friend.avatar}
             name={friend.name}

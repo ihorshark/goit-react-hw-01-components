@@ -17,6 +17,7 @@ export default function TransactionTable({ transactions }) {
             type={transaction.type}
             amount={transaction.amount}
             currency={transaction.currency}
+            id={transaction.id}
           />
         ))}
       </tbody>
