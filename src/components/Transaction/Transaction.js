@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
-export default function Transaction({ id, type, amount, currency }) {
+import s from './Transaction.module.css';
+
+export default function Transaction({ type, amount, currency }) {
   return (
-    <tr key={id}>
+    <tr className={s.row}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -11,6 +13,6 @@ export default function Transaction({ id, type, amount, currency }) {
 
 Transaction.propTypes = {
   type: PropTypes.string,
-  amount: PropTypes.number,
+  amount: PropTypes.string,
   currency: PropTypes.string,
 };

@@ -1,0 +1,26 @@
+table,
+th,
+td {
+  height: 40px;
+
+  border: 1px solid;
+  border-collapse: collapse;
+
+  text-align: center;
+}
+
+table {
+  margin-top: 40px;
+  width: 100%;
+
+  font-size: 24px;
+}
+
+.header {
+  height: 60px;
+  background-color: rgba(0, 100, 200, 0.8);
+}
+
+.row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}

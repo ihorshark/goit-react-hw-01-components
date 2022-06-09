@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
 import Friend from './Friend';
+import s from './FriendList.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul>
+    <ul className={s.friendList}>
       {friends.map(friend => (
         <li key={friend.id}>
           <Friend
@@ -15,3 +17,9 @@ export default function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+  }),
+};

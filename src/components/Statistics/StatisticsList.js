@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Statistics from './Statistics';
 import s from './Statistics.module.css';
 
@@ -8,7 +9,7 @@ function randomColor() {
 export default function StatisticsList({ title, stats }) {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+      <h2 className={title ? s.title : s.titleNone}>{title}</h2>
 
       <ul className={s.starList}>
         {stats.map(stat => (
@@ -20,3 +21,10 @@ export default function StatisticsList({ title, stats }) {
     </section>
   );
 }
+
+StatisticsList.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+  }),
+};
