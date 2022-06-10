@@ -23,10 +23,6 @@
   padding-bottom: 12px;
 }
 
-.titleNone {
-  display: none;
-}
-
 .item {
   display: flex;
   flex-direction: column;
